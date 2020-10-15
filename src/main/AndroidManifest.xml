@@ -1,1 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jaaja.monitor">
 
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/uera"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/uera"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name="com.jaaja.monitor.imageUpload"
+            android:label="User Uploads"></activity>
+        <activity
+            android:name="com.jaaja.monitor.videorecord"
+            android:label="Video Clip" />
+        <activity
+            android:name="com.jaaja.monitor.faqdetails"
+            android:label="Frequently Asked Questions" />
+        <activity
+            android:name="com.jaaja.monitor.faqs"
+            android:label="F.A.Qs" />
+        <activity
+            android:name="com.jaaja.monitor.uploaddocs"
+            android:label="User Uploads" />
+        <activity
+            android:name="com.jaaja.monitor.biodata"
+            android:label="Bio Data" />
+        <activity
+            android:name="com.jaaja.monitor.password"
+            android:label="Password" />
+        <activity android:name="com.jaaja.monitor.internet" />
+        <activity
+            android:name="com.jaaja.monitor.profile"
+            android:label="User Profile" />
+        <activity
+            android:name="com.jaaja.monitor.videos"
+            android:label="Video Clip" />
+        <activity
+            android:name="com.jaaja.monitor.contact"
+            android:label="Contacts" />
+        <activity
+            android:name="com.jaaja.monitor.complainttype"
+            android:label="Complaints" />
+        <activity
+            android:name="com.jaaja.monitor.videoupload"
+            android:label="SEND VIDEO CLIP" />
+        <activity
+            android:name="com.jaaja.monitor.welcome"
+            android:label="WELCOME TO UAERA APP" />
+        <activity
+            android:name="com.jaaja.monitor.login"
+            android:label="USER LOGIN" />
+        <activity
+            android:name="com.jaaja.monitor.approvedComplaints"
+            android:label="Approved Complaints" />
+        <activity
+            android:name="com.jaaja.monitor.pendingComplaints"
+            android:label="Pending Complaints" />
+        <activity android:name="com.jaaja.monitor.MainActivity" />
+        <activity
+            android:name="com.jaaja.monitor.complaintDetails"
+            android:label="Complaint Description" />
+        <activity
+            android:name="com.jaaja.monitor.HomeActivity"
+            android:label="Dashboard" />
+        <activity
+            android:name="com.jaaja.monitor.allcomplaints"
+            android:label="All Complaints" />
+        <activity
+            android:name="com.jaaja.monitor.createComplaints"
+            android:label="New Complaint" />
+        <activity
+            android:name="com.jaaja.monitor.splashscreen"
+            android:label="">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBqx7DOjHCOk_Jojpsoj7tp_OctM3RAFKk" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+</manifest>
