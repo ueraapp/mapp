@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.jaaja.monitor.imageUpload"
-            android:label="User Uploads Faith Love"></activity>
+            android:label="User Uploads"></activity>
         <activity
             android:name="com.jaaja.monitor.videorecord"
             android:label="Video Clip" />
